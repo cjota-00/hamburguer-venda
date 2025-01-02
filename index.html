@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./src/css/burguer.css">
+    <title>Document</title>
+</head>
+<body class="bg-ter">
+    <!--HEADER-->
+    <header>
+        <nav class="px-6 py-4 flex justify-between items-center">
+            <div class="header-left">
+                <h1 class="text-3xl font-extrabold">My <span class="text-[#D9C6B0]">Burguer</span></h1>
+            </div>
+                <div class="hidden sm:block">
+                    <ul class="flex text-[#D9C6B0]">
+                        <li class="mr-12"><a href="">Início</a></li>
+                        <li class="mr-12"><a href="">Cardápio</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </div>
+                <div class=" btn-sm hidden sm:flex items-center">
+                    <div class="cart-img mr-3 cursor-pointer">
+                        <img src="./src/images/cart-shopping-com.svg" class="w-12">
+                        <div class="excla-cart">!</div>
+                    </div>                    
+                    <button>Login</button>
+                </div>
+                <!--menu mobile img-->
+                <div class="menu-mobile flex sm:hidden">
+                    <div class="cart-img mr-3 cursor-pointer">
+                        <img src="./src/images/cart-shopping-com.svg" class="w-12">
+                        <div class="excla-cart">!</div>
+                    </div>
+                    <div class="img-mobile">
+                        <img src="./src/images/menu.svg" alt="">
+                    </div>
+                </div>
+        </nav>
+        <div class="menu-content-mobile  bg-[#D9C6B0]">
+            <ul class="flex flex-col text-ter">
+                <li><a href="">Início</a></li>
+                <li><a href="">Cardápio</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+            <div class=" btn-log-mobile ">
+                <button>Login</button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <!--section mobile-->
+        <div class="section-mobile sm:hidden">
+            <div class="img-big bg-[#D9C6B0]">
+                <img src="./src/images/heroBurger.png" alt="">
+            </div>
+            <div class="section-text text-center">
+                <h1 class="text-3xl font-extrabold">My <span class="text-[#D9C6B0]">Burguer</span></h1>
+                <p class="text-3xl">O meu, o seu o nosso BURGUER.</p>
+                <p class="text-gray-400">hambugueres e batatas artesanais.</p>
+            </div>
+            <div class="btn-pedido text-center">
+                <a href="#hambhamb"><button>Fazer Pedido</button></a>
+            </div>
+        </div>
+        <!--section desktop-->
+        <div class="hidden sm:flex">
+            <div class="img-left">
+                <img src="./src/images/heroBurger.png" alt="">
+            </div>
+            <div class="section-right text-center">
+                <div class="">
+                    <h1 class="text-3xl font-extrabold">My <span class="text-[#D9C6B0]">Burguer</span></h1>
+                    <p class="text-5xl mb-3">O meu, o seu o nosso BURGUER.</p>
+                    <p class="text-gray-400">hambugueres e batatas artesanais.</p>
+                </div>
+                <div class="btn-pedido-desktop text-center">
+                    <a href="#hambhamb"><button>Fazer Pedido</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--hambugueres-->
+    <section id="hambhamb">
+        <h1 class="text-center text-3xl text-[#D9C6B0] font-semibold mt-4">HAMBÚRGUERES</h1>
+        <div class="models">
+            <div class="hamb-box">
+                <a href="">
+                    <div class="hamb cursor-pointer">
+                        <div class="img">
+                            <img src="./src/images/burger1.png" alt="">
+                        </div>
+                        <div class="hamb-content">
+                            <div class="name">name</div>
+                            <div class="price">--R$</div>
+                            <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item flex justify-between items-center">
+                    <div class="cart-top-left flex items-center">
+                        <img src="./src/images/burger1.png" class="w-14 mr-4" alt="">
+                        <div class="cart-item-nome ">---</div>
+                    </div>
+                    <div class="price-qtarea">
+                        <button class="price-qtmenos-cart">-</button>
+                        <div class="price-qt-cart">1</div>
+                        <button class="price-qtmais-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="area-burguer md:grid md:grid-cols-2 lg:grid-cols-3">
+
+        </div>
+    </section>
+    <!--aside-area-de-compra-->
+    <aside class="area-compra">
+        <div class="order-area w-80 h-96 sm:w-[700px] sm:flex gap-5">
+            <div class="order-img">
+                <img src="./src/images/burger1.png" class="w-40 sm:w-[250px]" alt="">
+            </div>
+            <div class="order-content flex-1">
+                <div class="order-area-content">
+                    <div class="name-order text-3xl font-bold sm:text-5xl ">Name</div>
+                    <div class="description-desktop mb-10 hidden sm:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolore consequatur </div>
+                    <div class="price-order">
+                        <div class="price-sector text-gray-500 sm:text-xl">PREÇO</div>
+                        <div class="price-info">
+                            <div class="price-actual mb-3 sm:text-xl">R$ --</div>
+                            <div class="price-qtarea">
+                                <button class="price-qtmenos">-</button>
+                                <div class="price-qt">1</div>
+                                <button class="price-qtmais">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="finish-order  sm:mt-5">
+                        <div class="cancel mt-2 cursor-pointer">
+                            cancelar
+                        </div>
+                        <div class="add-cart mt-2 text-center cursor-pointer px-[10px] py-[8px] sm:px-9 sm:py-4 ">
+                            Adicionar ao carrinho
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!--cart-area-->
+    <aside class="cart--area p-2 inset-0  lg:left-[900px] ">
+        <div class="close-area text-end">
+            <div class="close-cart inline-block font-bold text-5xl text-red-600 cursor-pointer">x</div>
+        </div>
+        <h1 class="text-3xl font-semibold">Seu Pedido</h1>
+        <div class="cart"></div>
+        <div class="cart-detils">
+            <div class="cart--totalitem subtotal">
+                <span>Subtotal</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--totalitem desconto">
+                <span>Desconto (-10%)</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--totalitem total">
+                <span>Total</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--finalizar cursor-pointer">Finalizar Compra</div>
+        </div>
+    </aside>
+    <footer>
+        <!--footer mobile-->
+        <div class="footer-mobile sm:hidden">
+            <div class="col-1">
+                <h1 class="text-3xl font-extrabold">My <span class="text-[#D9C6B0]">Burguer</span></h1>
+                <p>Venha conhecer nossas redes sociais!!</p>
+                <div class="social-media flex gap-4">
+                    <div class=""><img src="./src/images/instagram-com.png" class="rounded-[50%]" alt=""></div>
+                    <div class=""><img src="./src/images/facebook-com.png"class="rounded-[50%]" alt=""></div>
+                    <div class=""><img src="./src/images/whatsapp-com.png"class="rounded-[50%]" alt=""></div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="text-xl mt-16">Links</div>
+                <ul class="flex flex-col text-ter">
+                    <li><a href="">Início</a></li>
+                    <li><a href="">Cardápio</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <div class="text-xl mt-16">Referência</div>
+                <p>Inspirado no projeto da <a href="https://alunos.b7web.com.br" class="text-blue-500 underline">B7Web</a> (B7Burguer).</p>
+            </div>
+            <div class="col-4">
+                <div class="text-xl mt-16">Feito Por</div>
+                <p>Giovane Jesus</p>
+            </div>
+        </div>
+        <!--footer desktop-->
+        <div class="footer-desktop hidden sm:flex justify-between">
+            <div class="col-1">
+                <h1 class="text-3xl font-extrabold">My <span class="text-[#D9C6B0]">Burguer</span></h1>
+                <p>Venha conhecer nossas redes sociais!!</p>
+                <div class="social-media flex gap-4">
+                    <div class=""><img src="./src/images/instagram-com.png"class="rounded-[50%]" alt=""></div>
+                    <div class=""><img src="./src/images/facebook-com.png"class="rounded-[50%]" alt=""></div>
+                    <div class=""><img src="./src/images/whatsapp-com.png"class="rounded-[50%]" alt=""></div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="text-xl mt-16">Links</div>
+                <ul class="flex flex-col text-ter">
+                    <li><a href="">Início</a></li>
+                    <li><a href="">Cardápio</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <div class="text-xl mt-16">Referência</div>
+                <p>Inspirado no projeto da <a href="https://alunos.b7web.com.br" class="text-blue-500 underline">B7Web</a> (B7Burguer).</p>
+            </div>
+            <div class="col-4">
+                <div class="text-xl mt-16">Feito Por</div>
+                <p>Giovane Jesus</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/js/bubu.js"></script>
+    <script src="./src/js/burguer.js"></script>
+</body>
+</html>
