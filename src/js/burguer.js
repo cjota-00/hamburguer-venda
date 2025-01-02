@@ -51,7 +51,7 @@ c('.price-qtmais').addEventListener('click',()=>{
 
 
 // menu mobile 
-const btnMobile = document.querySelector('.menu-mobile');
+const btnMobile = document.querySelector('.menu-mobile .img-mobile');
 
 btnMobile.addEventListener('click',()=>{
     let menuContent = document.querySelector('.menu-content-mobile')
@@ -94,13 +94,15 @@ c('.add-cart').addEventListener('click',()=>{
    closeModal()
 })
 //open cart
-c('.cart-img img').addEventListener('click', ()=>{
-    let asideCart = c('.cart--area');
-    asideCart.classList.add('show')
-
-    updateCart();
-
+cs('.img-cart').forEach((item)=>{
+    item.addEventListener('click',()=>{
+        let cartShow = c('.cart--area');
+        cartShow.classList.add('show');
+        updateCart();
+    })
 })
+
+
 
 function updateCart(){
     if(cart.length > 0){
