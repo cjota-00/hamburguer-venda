@@ -9,18 +9,12 @@
 </head>
 <body class="bg-ter">
     <!--HEADER-->
-    <header>
-        <nav class="px-6 py-4 flex justify-between items-center">
+    <header class="fixed sm:sticky w-screen">
+        <nav class="px-6 py-4 flex justify-between items-center bg-ter">
             <div class="header-left">
                 <h1 class="text-3xl font-extrabold">My <span class="text-[#D9C6B0]">Burguer</span></h1>
             </div>
-                <div class="hidden sm:block">
-                    <ul class="flex text-[#D9C6B0]">
-                        <li class="mr-12"><a href="">Início</a></li>
-                        <li class="mr-12"><a href="">Cardápio</a></li>
-                        <li><a href="">Contato</a></li>
-                    </ul>
-                </div>
+                
                 <div class=" btn-sm hidden sm:flex items-center">
                     <div class="cart-img mr-3 cursor-pointer">
                         <img src="./src/images/cart-shopping-com.svg" class="img-cart w-12">
@@ -50,7 +44,7 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="">
         <!--section mobile-->
         <div class="section-mobile sm:hidden">
             <div class="img-big bg-[#D9C6B0]">
@@ -66,7 +60,7 @@
             </div>
         </div>
         <!--section desktop-->
-        <div class="hidden sm:flex">
+        <div class="section-desktop hidden sm:flex">
             <div class="img-left">
                 <img src="./src/images/heroBurger.png" alt="">
             </div>

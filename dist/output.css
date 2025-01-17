@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .inset-0 {
   inset: 0px;
 }
@@ -590,10 +594,6 @@ video {
   margin-top: 1rem;
 }
 
-.block {
-  display: block;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -610,6 +610,10 @@ video {
   height: 24rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -624,6 +628,10 @@ video {
 
 .w-80 {
   width: 20rem;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .flex-1 {
@@ -690,6 +698,14 @@ video {
 .py-\[8px\] {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
@@ -762,6 +778,18 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:static {
+    position: static;
+  }
+
+  .sm\:fixed {
+    position: fixed;
+  }
+
+  .sm\:sticky {
+    position: sticky;
+  }
+
   .sm\:mt-5 {
     margin-top: 1.25rem;
   }

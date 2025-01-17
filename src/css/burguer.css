@@ -132,7 +132,8 @@ body{
 
 /*section mobile*/
 .section-mobile{
-    height: calc(100vh - 5px);
+    height: calc(100vh - 16px);
+    padding-top: 90px;
 }
 .img-big{
     display: flex;
